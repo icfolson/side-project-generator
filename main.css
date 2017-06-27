@@ -93,7 +93,8 @@ div {
 }
 
 .floating-box {
-    display: inline-block;
+    /*display: inline-block;*/
+    float: left;
     text-align: center;
     width: 32%;
     height: 40%;
