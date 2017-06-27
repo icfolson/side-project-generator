@@ -1,16 +1,10 @@
-/*code by Alex Nelson*/
-
-/*avoid inline-block*/
-/*use float*/
-/*to best scale, absolute positioning*/
+/*developed with Alex Nelson*/
 
 body {
     background-image: url("paper_background.jpg");
     font-family: 'Overpass Mono', monospace;
-    /*//font-size: 22px;*/
 }
 .content {
-    /*max-width: 500px;*/
     margin: auto;
 }
 * {
@@ -41,26 +35,7 @@ body {
 fieldset {
     boarder: none;
 }
-/*.check_box {
-    display:none;
-}
 
-.check_box + label{
-    background-image: url("unlock.png") no-repeat;
-    height: 16px;
-    width: 16px;
-    display: inline-block;
-    padding: 0 0 0 0px;
-}
-
-.check_box:checked + label{
-    background-image: url("lock.png") no-repeat;
-    height: 16px;
-    width: 16px;
-    display: inline-block;
-    padding: 0 0 0 0px;
-}
-*/
 input[type=checkbox] {
     display: block;
     width: 65px;
@@ -81,6 +56,7 @@ input[type=checkbox]:checked {
     background-image: url(lock.png);
     display: inline-block;
 }
+
 p {
     /*display: block;*/
     /*margin-top: 1em;*/
@@ -92,9 +68,11 @@ p {
 button {
     font-family: 'Overpass Mono', monospace;
 }
+
 h1 {
     text-align: center;
 }
+
 div {
     /*//background-color: #FFFFFF;*/
     /*//width: 30px;*/
@@ -103,16 +81,17 @@ div {
     /*//margin: 25px;*/
     /*text-transform: capitalize;*/
 }
+
 .floating-box {
     display: inline-block;
     text-align: center;
     width: 32%;
     height: 40%;
     margin: auto;
-    /*//padding: 5%;*/
     /*border: 3px solid #73AD21;*/
     font-size: 28px;
 }
+
 img {
     vertical-align: center;
     font-family: 'Overpass Mono', monospace;
@@ -121,6 +100,7 @@ img {
     width: 100%;
     height: auto;
 }
+
 .container {
     text-align: center;
 }
