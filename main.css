@@ -4,17 +4,21 @@ body {
     background-image: url("paper_background.jpg");
     font-family: 'Overpass Mono', monospace;
 }
+
 .content {
     margin: auto;
 }
+
 * {
     box-sizing: border-box;
 }
+
 .row::after {
     content: "";
     clear: both;
     display: table;
 }
+
 [class*="col-"] {
     float: left;
     padding: 15px;
@@ -67,17 +71,23 @@ p {
 
 button {
     font-family: 'Overpass Mono', monospace;
+    font-size: 18px;
 }
 
 h1 {
     text-align: center;
 }
 
+a {
+    /*color: hotpink;*/
+    color: black;
+}
+
 div {
     /*//background-color: #FFFFFF;*/
     /*//width: 30px;*/
     /*//border: 25px;*/
-    padding: 25px;
+    /*padding: 25px;*/
     /*//margin: 25px;*/
     /*text-transform: capitalize;*/
 }
@@ -103,4 +113,7 @@ img {
 
 .container {
     text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }

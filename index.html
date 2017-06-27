@@ -10,7 +10,7 @@
 <div class="content">
 <!-- <fieldset> -->
 	<h1>Side Project Generator</h1>
-	<p style="text-align: center;"> Creatives often combine two things<br>that haven't been combined before.<br>They call these, "side projects". </p>
+	<p style="text-align: center;"> Creatives often combine two things<br>that haven't been combined before.<br>They call these, side projects. </p>
 	<!-- </fieldset> -->
 
 	<!-- <fieldset> -->
@@ -18,7 +18,7 @@
 	<!-- <p class="container"> -->
 	<div class="floating-box">
 		<p style="text-transform: capitalize;"><a id="leftOutput" target="_blank"></a></p>
-	  	<input type="checkbox" id="isLeftLocked" class="check_box"><br> 	
+	  	<input type="checkbox" id="isLeftLocked" class="check_box">
 	<!-- <select id="leftSelect" onchange="searchLeftBy"> -->
 	  <!-- <option value="-">- -->
 	  <!-- <option value="BMW">BMW -->
@@ -34,16 +34,16 @@
 
 	<div class="floating-box">
 		<p style="text-transform: capitalize;"><a id="rightOutput" target="_blank"></a></p>
-		<input type="checkbox" id="isRightLocked"><br>
+		<input type="checkbox" id="isRightLocked">
 	</div>
 	<!-- </p> -->
 	<!-- </fieldset> -->
 	<br>	<!-- <fieldset> -->
 </div>
 
-<container>
-	<h3 style="float: left;">By <a href="https://nickrog.com" target="_blank">Nick Rog</a> and <a href="https://russrizzo.net" target="_blank">Russ Rizzo</a>, with <u>Alex Nelson</u></h3>
-	<h3 style="float: right;"><u>how to play</u></h3>
+<container class="container">
+	<p style="float: left;">By <a href="https://nickrog.com" target="_blank">Nick Rog</a> and <a href="http://russrizzo.net" target="_blank">Russ Rizzo</a>, with <u>Alex Nelson</u></p>
+	<p style="float: right; margin: 15px"><u>how to play</u></p>
 	<div style="clear: both"></div>
 </container>
 <!-- </fieldset> -->
@@ -98,9 +98,7 @@ function myFunction(){
 		document.getElementById("rightOutput").href = "http://images.google.com/search?tbm=isch&q="+textEdit(rightDisplay);
 
 		document.getElementById("leftOutput").innerHTML = leftDisplay;
-		document.getElementById("rightOutput").innerHTML = rightDisplay;
-
-	
+		document.getElementById("rightOutput").innerHTML = rightDisplay;	
 }
 
 function getRandom(){
