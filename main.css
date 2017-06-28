@@ -1,7 +1,7 @@
 /*developed with Alex Nelson*/
 
 body {
-    background-image: url("paper_background.jpg");
+    background-image: url("images/paper_background.jpg");
     font-family: 'Overpass Mono', monospace;
 }
 
@@ -42,8 +42,8 @@ fieldset {
 
 input[type=checkbox] {
     display: block;
-    width: 65px;
-    height: 65px;
+    width: 35px;
+    height: 35px;
     -webkit-appearance: none;
     outline: 0;
     background-repeat: no-repeat;
@@ -52,12 +52,12 @@ input[type=checkbox] {
 }
 
 input[type=checkbox]:not(:checked) {
-    background-image: url(unlock.png);
+    background-image: url(images/unlock.png);
     display: inline-block;
 }
 
 input[type=checkbox]:checked {
-    background-image: url(lock.png);
+    background-image: url(images/lock.png);
     display: inline-block;
 }
 
@@ -72,6 +72,9 @@ p {
 button {
     font-family: 'Overpass Mono', monospace;
     font-size: 18px;
+    border: transparent;
+    background: transparent;
+
 }
 
 h1 {
@@ -112,9 +115,11 @@ img {
     height: auto;
 }
 
-.container {
+.footer {
+    float: center;
     text-align: center;
     position: fixed;
     bottom: 0;
-    width: 100%;
+    /*width: 100%;*/
+    vertical-align: center;
 }
