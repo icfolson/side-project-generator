@@ -2,7 +2,7 @@
 
 body {
     background-image: url("images/Background image.png");
-    font-family: 'Overpass Mono', monospace;
+    font-family: 'Ubuntu Mono', monospace;
 }
 
 .content {
@@ -103,8 +103,8 @@ div {
     height: 50%;
     margin: auto;
     /*border: 3px solid #73AD21;*/
-    /*font-size: 1.5em;*/
-    font-size: 28px;
+    font-size: 5vw;
+    /*font-size: 28px;*/
     word-wrap: break-word;
 }
 
