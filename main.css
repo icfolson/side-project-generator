@@ -70,7 +70,7 @@ p {
 }
 
 button {
-    font-family: 'Overpass Mono', monospace;
+    font-family: 'Ubuntu Mono', monospace;
     font-size: 18px;
     border: transparent;
     background: transparent;
@@ -100,15 +100,15 @@ div {
     float: left;
     text-align: center;
     width: 32%;
-    height: 40%;
+    height: 50%;
     margin: auto;
     /*border: 3px solid #73AD21;*/
-    font-size: 28px;
+    font-size: 1.5em;
 }
 
 img {
     vertical-align: center;
-    font-family: 'Overpass Mono', monospace;
+    font-family: 'Ubuntu Mono', monospace;
     display: block;
     margin: auto;
     width: 100%;
@@ -120,6 +120,11 @@ img {
     text-align: center;
     position: fixed;
     bottom: 0;
-    /*width: 100%;*/
+    width: 100%;
     vertical-align: center;
+}
+
+#wrap {
+    width: 900px;
+    margin: 0 auto;
 }
