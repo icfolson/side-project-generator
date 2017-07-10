@@ -1,10 +1,10 @@
 /*developed with Alex Nelson*/
 
 body {
-    background-image: url("images/Background image.png");
+    background-image: url("images/BackgroundImage.png");
     font-family: 'Ubuntu Mono', monospace;
-    margin: 15px;
-    /*border: 1280px;*/
+    margin: 115px, 115px, 115px, 115px;
+    /*max-width: 1280px;*/
 }
 
 .content {
@@ -104,7 +104,7 @@ div {
     width: 32%;
     height: 50%;
     margin: auto;
-    /*border: 3px solid #73AD21;*/
+    /*border: 1px solid #73AD21;*/
     font-size: 4vw;
     /*font-size: 28px;*/
     word-wrap: break-word;
