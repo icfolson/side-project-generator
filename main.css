@@ -3,10 +3,11 @@
 body {
     background-image: url("images/Background image.png");
     font-family: 'Ubuntu Mono', monospace;
+    margin: 15px;
 }
 
 .content {
-    margin: auto;
+    /*margin: auto;*/
 }
 
 * {
@@ -42,8 +43,8 @@ fieldset {
 
 input[type=checkbox] {
     display: block;
-    width: 35px;
-    height: 35px;
+    width: 9vw;
+    height: 9vh;
     -webkit-appearance: none;
     outline: 0;
     background-repeat: no-repeat;
@@ -103,7 +104,7 @@ div {
     height: 50%;
     margin: auto;
     /*border: 3px solid #73AD21;*/
-    font-size: 5vw;
+    font-size: 4.2vw;
     /*font-size: 28px;*/
     word-wrap: break-word;
 }
@@ -118,15 +119,27 @@ img {
 }
 
 .footer {
-    float: center;
+    /*float: center;*/
     text-align: center;
-    position: fixed;
+    position: absolute;
     bottom: 0;
     width: 100%;
-    vertical-align: center;
+    /*vertical-align: center;*/
+    /*padding: 1rem;*/
 }
 
-#wrap {
-    width: 900px;
-    margin: 0 auto;
+.container {
+  width: 70%;
+  
+  margin: 10px auto;
+  position: relative;
+  text-align:center;
+}
+
+.block {
+  
+  height: 100px;
+  width: 100px;
+  display:inline-block;
+  margin: 10px;
 }
