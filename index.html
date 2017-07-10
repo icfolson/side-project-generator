@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="main.css">
 <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet">
+<link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+
 
 <head>
 	<title>Side Project Generator</title>
@@ -14,10 +16,10 @@
 
 <body>
 	<br><br>
-
+<div style="width: 100%;">
 	<div class="floating-box" style="width: 33%; float: left;">
-		<p style="text-transform: capitalize;"><a id="leftOutput" target="_blank"></a></p>
-	  	<input type="checkbox" id="isLeftLocked" class="check_box"><br> 	
+		<p style="text-transform: capitalize;" class="blink"><span><a id="leftOutput" target="_blank"></a></span></p>
+	  	<!-- <input type="checkbox" id="isLeftLocked" class="check_box"><br> 	 -->
 	</div>
 
 	<div class="floating-box" style="width: 34%; float: center;">
@@ -26,15 +28,36 @@
 		<!-- <br> -->
 
 	<div class="floating-box" style="width: 33%; float: right;">
-		<p style="text-transform: capitalize;"><a id="rightOutput" target="_blank"></a></p>
+		<p style="text-transform: capitalize;" class="blink"><span><a id="rightOutput" target="_blank"></a></span></p>
+		<!-- <input type="checkbox" id="isRightLocked"><br> -->
+	</div>
+</div>
+<div style="display: inline-block; width: 100%;">
+	<div class="floating-box" style="width: 33%; float: left;">
+	  	
+	  	<input type="checkbox" id="isLeftLocked" class="check_box"><br> 	
+	</div>
+
+	<div class="floating-box" style="width: 34%; float: center;">
+		
+	</div>
+		<!-- <br> -->
+
+	<div class="floating-box" style="width: 33%; float: right;">
+		
 		<input type="checkbox" id="isRightLocked"><br>
 	</div>
+</div>	
 	<br>
 </body>
 
 
 
 <div class="footer" style="text-align: center;">
-	<p>By <a href="https://nickrog.com" target="_blank">Nick Rog</a> and <a href="http://russrizzo.net" target="_blank">Russ Rizzo</a>, with <u>Alex Nelson</u></p>
+	<p>
+		By <a href="https://nickrog.com" target="_blank" class="link"><span>Nick Rog</span></a>
+	 	and <a href="http://russrizzo.net" target="_blank" class="link"><span>Russ Rizzo</span></a>, with <u>Alex Nelson</u>
+	</p>
 </div>
+
 <script src="src/main.js"></script>

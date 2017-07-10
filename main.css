@@ -4,6 +4,7 @@ body {
     background-image: url("images/Background image.png");
     font-family: 'Ubuntu Mono', monospace;
     margin: 15px;
+    /*border: 1280px;*/
 }
 
 .content {
@@ -117,10 +118,28 @@ img {
     width: 100%;
     height: auto;
 }
+.link span{
+    color:black;
+    font-size:15px;
+}
+
+.link:hover span{
+    font-style:italic;
+}
+
+.blink span{
+    color:black;
+    /*font-size:15px;*/
+}
+
+.blink:hover span{
+    font-style:italic;
+}
 
 .footer {
     /*float: center;*/
     text-align: center;
+    font-size: 14px;
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -140,6 +159,6 @@ img {
   
   height: 100px;
   width: 100px;
-  display:inline-block;
+  /*display:inline-block;*/
   margin: 10px;
 }
