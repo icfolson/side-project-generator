@@ -1,3 +1,6 @@
+/*developed by Alex Nelson
+ *summer 2017
+*/
 
 var ideaList = [
 	'is 26 years old', 'is a taurus', 'enjoys coding', 'made this website', 'likes long walks on the beach', 'interns at ICF Olson', 'can\'t teach you how to duggie', 'eats at Chipotle', 'finds new craft breweries', 'supports local', 'speaks french'
@@ -76,8 +79,4 @@ function sendGoogle(idea){
 function textEdit(stuff){
 	//http://images.google.com/search?tbm=isch&q=
 	return stuff.replace(/ /g, "_");
-}
-
-function searchLeftBy() {
-
 }
