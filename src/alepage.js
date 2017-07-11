@@ -1,6 +1,6 @@
 
 var ideaList = [
-	'is 26 years old', 'is a taurus', 'enjoys coding', 'made this website', 'likes long walks on the beach', 'interns at ICF Olson', 'can\'t teach you how to duggie', 'eats at Chipotle', 'finds new craft breweries', 'supports local'
+	'is 26 years old', 'is a taurus', 'enjoys coding', 'made this website', 'likes long walks on the beach', 'interns at ICF Olson', 'can\'t teach you how to duggie', 'eats at Chipotle', 'finds new craft breweries', 'supports local', 'speaks french'
 ];
 var output = [0, 0];
 var isLeftLocked = document.getElementById("isLeftLocked");

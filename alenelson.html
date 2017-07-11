@@ -1,64 +1,73 @@
-<!-- Side Project Generator
-	conception and ideaList by Nick Rog and Russ Rizzo
-	code by Alex Nelson -->
-<!doctype html>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="main.css">
-<!-- Boostrap: Latest compiled and minified CSS -->
-<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
-<link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet">
-<link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+<script type="text/javascript">
 
+if (screen.width <= 699) {
+document.location = "mobile.html";
+}
+
+</script>
+<script language=javascript>
+
+if ((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
+   location.replace("http://url-to-send-them/iphone.html");
+}
+
+</script>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-	<title>Alex Nelson's Page</title>
-	<h1>Who is Alex "Nelson" Nelson?</h1>
-	<p style="text-align: center;">
-		In a moment of haste, Nelson realized he does not have his own website.<br>
-		Thus he made his own list of thing he thinks you might want to know about him.<br>
-		Contact via: email - alenelson@gmail.com  or  LinkedIn - <a href="https://www.linkedin.com/in/alex-nelson-961776b0/" style="color: black;" target="_blank" class="link"><span>profile</span></a>
-	</p>
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Narrow Jumbotron Template for Bootstrap</title>
+  <link href="main.css" rel="stylesheet">
 </head>
 
 <body>
-	<br><br>
-<div style="width: 100%;">
-	<div class="floating-box" style="width: 33%; float: left;">
-		<br>
-		<p style="text-transform: capitalize;" class="blink"><span><a id="leftOutput" target="_blank"></a></span></p>
-	  	<!-- <input type="checkbox" id="isLeftLocked" class="check_box"><br> 	 -->
-	</div>
+  <div class="section group" style="text-align: center;">
+    <h1>Jumbotron heading</h1>
+    <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+  </div>
 
-	<div class="floating-box" style="width: 34%; float: center;">
-		<button class="button button-clear" onclick="myFunction()"><img src="images/BA-ZING.gif">click to learn</img></button>
-	</div>
-		<!-- <br> -->
+  <div class="section group">
+  <p></p>
+  <br>
+  </div>
 
-	<div class="floating-box" style="width: 33%; float: right;">
-		<br>
-		<p style="text-transform: capitalize;" class="blink"><span><a id="rightOutput" target="_blank"></a></span></p>
-		<!-- <input type="checkbox" id="isRightLocked"><br> -->
-	</div>
-</div>
-<div style="display: inline-block; width: 100%;">
-	<div class="floating-box" style="width: 33%; float: left;">
-	  	
-	  	<input type="checkbox" id="isLeftLocked" class="check_box">	
-	</div>
+  <div class="section group">
+    <div class="col span_1_of_5" style="width: 5%;"></div>
 
-	<div class="floating-box" style="width: 34%; float: center;">
-		
-	</div>
-		<!-- <br> -->
+    <div class="col span_1_of_5" style="width: 32.44%">
+      <p style="text-transform: capitalize; font-size: 3vw;" class="blink"><span><a id="leftOutput" target="_blank"></a></span></p>
+    </div>
 
-	<div class="floating-box" style="width: 33%; float: right;">
-		
-		<input type="checkbox" id="isRightLocked">
-	</div>
-</div>	
-</body>
+    <div class="col span_1_of_5">
+      <button class="button button-clear" onclick="myFunction()"><img src="images/Colbert.gif">click to randomize</img></button>
+    </div>
 
+    <div class="col span_1_of_5" style="width: 32.44%">
+      <p style="text-transform: capitalize; font-size: 3vw;" class="blink"><span><a id="rightOutput" target="_blank"></a></span></p>
+    </div>
 
+    <div class="col span_1_of_5" style="width: 5%;"></div>
+  </div>
+  <!-- part 2 -->
+  <div class="section group">
+    <div class="col span_1_of_5" style="width: 5%"></div>
+
+    <div class="col span_1_of_5" style="width: 32.44%">
+      <input type="checkbox" id="isLeftLocked" class="check_box"> 
+    </div>
+
+    <div class="col span_1_of_5"></div>
+
+    <div class="col span_1_of_5" style="width: 32.44%">
+      <input type="checkbox" id="isRightLocked">
+    </div>
+
+    <div class="col span_1_of_5" style="width: 5%"></div>
+  </div>
 
 <div class="footer" style="text-align: center;">
 	<p>
@@ -67,4 +76,6 @@
 	</p>
 </div>
 
+</body>
+</html>
 <script src="src/alepage.js"></script>
