@@ -45,8 +45,8 @@ function myFunction(){
 		// document.getElementById("leftOutput").href = "https://www.wikipedia.org/wiki/"+leftDisplay;
 		// document.getElementById("rightOutput").href = "https://www.wikipedia.org/wiki/"+rightDisplay;
 		//for google image page
-		document.getElementById("leftOutput").href = "http://images.google.com/search?tbm=isch&q="+textEdit(leftDisplay);
-		document.getElementById("rightOutput").href = "http://images.google.com/search?tbm=isch&q="+textEdit(rightDisplay);
+		//document.getElementById("leftOutput").href = "http://images.google.com/search?tbm=isch&q="+textEdit(leftDisplay);
+		//document.getElementById("rightOutput").href = "http://images.google.com/search?tbm=isch&q="+textEdit(rightDisplay);
 
 		document.getElementById("leftOutput").innerHTML = leftDisplay;
 		document.getElementById("rightOutput").innerHTML = rightDisplay;

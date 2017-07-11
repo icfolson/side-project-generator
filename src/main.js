@@ -38,7 +38,7 @@ function newOutput(){
 }
 
 function myFunction(){
-		// alert("there are "+ideaList.length+" list items");
+		//alert("there are "+ideaList.length+" list items");
 		newOutput();
 		var leftDisplay = ideaList[output[0]];
 		var rightDisplay = ideaList[output[1]];
