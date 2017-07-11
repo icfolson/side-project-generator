@@ -1,66 +1,65 @@
-<!-- Side Project Generator
-	conception and ideaList by Nick Rog and Russ Rizzo
-	code by Alex Nelson -->
-<!doctype html>
-<meta name="viewport" content="width=device-width, initial-scale=1.2">
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<link rel="stylesheet" href="main.css">
-<!-- Boostrap: Latest compiled and minified CSS -->
-<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
-<link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet">
-<link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
-
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<title>Side Project Generator</title>
-	<h1>Side Project Generator</h1>
-	<p style="text-align: center;"> Creatives often combine two things that haven't been combined before.<br>They call these, side projects. </p>
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Narrow Jumbotron Template for Bootstrap</title>
+  <link href="main.css" rel="stylesheet">
 </head>
 
-<body style="padding: 135px, 135px, 135px, 135px;">
+<body>
+  <div class="section group" style="text-align: center;">
+    <h1>Jumbotron heading</h1>
+    <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+  </div>
 
-<div style="width: 100%;">
-	<div class="floating-box" style="width: 33%; float: center;">
-		<br><br>
-		<p style="text-transform: capitalize;" class="blink"><span><a id="leftOutput" target="_blank"></a></span></p>
-	  	<!-- <input type="checkbox" id="isLeftLocked" class="check_box"><br> 	 -->
-	</div>
+  <div class="section group">
+  <p></p>
+  <br>
+  </div>
 
-	<div class="floating-box" style="width: 34%; float: center;">
-		<br><br>
-		<button class="button button-clear" onclick="myFunction()"><img src="images/Colbert.gif">click to randomize</img></button>
+  <div class="section group">
+    <div class="col span_1_of_5" style="width: 5%;"></div>
 
-	</div>
-		<!-- <br> -->
+    <div class="col span_1_of_5" style="width: 32.44%">
+      <p style="text-transform: capitalize; font-size: 4vw;" class="blink"><span><a id="leftOutput" target="_blank"></a></span></p>
+    </div>
 
-	<div class="floating-box" style="width: 33%; float: center;">
-		<br><br>
-		<p style="text-transform: capitalize;" class="blink"><span><a id="rightOutput" target="_blank"></a></span></p>
-		<!-- <input type="checkbox" id="isRightLocked"><br> -->
-	</div>
-</div>
-<div style="display: inline-block; width: 100%;">
-	<div class="floating-box" style="width: 33%; float: left;">
-	  	<input type="checkbox" id="isLeftLocked" class="check_box">	
-	</div>
+    <div class="col span_1_of_5">
+      <button class="button button-clear" onclick="myFunction()"><img src="images/Colbert.gif">click to randomize</img></button>
+    </div>
 
-	<div class="floating-box" style="width: 34%; float: center;"></div>
+    <div class="col span_1_of_5" style="width: 32.44%">
+      <p style="text-transform: capitalize; font-size: 4vw;" class="blink"><span><a id="rightOutput" target="_blank"></a></span></p>
+    </div>
 
-	<div class="floating-box" style="width: 33%; float: right;">
-		<input type="checkbox" id="isRightLocked">
-	</div>
-</div>	
+    <div class="col span_1_of_5" style="width: 5%;"></div>
+  </div>
+  <!-- part 2 -->
+  <div class="section group">
+    <div class="col span_1_of_5" style="width: 5%"></div>
+
+    <div class="col span_1_of_5" style="width: 32.44%">
+      <input type="checkbox" id="isLeftLocked" class="check_box"> 
+    </div>
+
+    <div class="col span_1_of_5"></div>
+
+    <div class="col span_1_of_5" style="width: 32.44%">
+      <input type="checkbox" id="isRightLocked">
+    </div>
+
+    <div class="col span_1_of_5" style="width: 5%"></div>
+  </div>
+
+  <footer class="footer">
+    <p>By <a href="https://nickrog.com" target="_blank" class="link"><span>Nick Rog</span></a>
+    and <a href="http://russrizzo.net" target="_blank" class="link"><span>Russ Rizzo</span></a>, with <a href="alenelson.html" target="_blank" class="link"><span>Alex Nelson</span></a></p>
+  </footer>
+
 </body>
-
-
-
-<div class="footer" style="text-align: center;">
-	<p>
-		By <a href="https://nickrog.com" target="_blank" class="link"><span>Nick Rog</span></a>
-	 	and <a href="http://russrizzo.net" target="_blank" class="link"><span>Russ Rizzo</span></a>, with <a href="alenelson.html" target="_blank" class="link"><span>Alex Nelson</span></a>
-	</p>
-</div>
-
+</html>
 <script src="src/main.js"></script>
