@@ -3,43 +3,9 @@
 body {
     background-image: url("images/BackgroundImage.png");
     font-family: 'Ubuntu Mono', monospace;
-    margin: 115px, 115px, 115px, 115px;
+    padding: 115px, 115px, 115px, 115px;
+    margin: auto;
     /*max-width: 1280px;*/
-}
-
-.content {
-    /*margin: auto;*/
-}
-
-* {
-    /*box-sizing: border-box;*/
-}
-
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-[class*="col-"] {
-    float: left;
-    padding: 15px;
-}
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
-
-fieldset {
-    boarder: none;
 }
 
 input[type=checkbox] {
@@ -95,6 +61,7 @@ div {
     /*padding: 25px;*/
     /*//margin: 25px;*/
     /*text-transform: capitalize;*/
+    text-align: center;
 }
 
 .floating-box {
@@ -105,7 +72,7 @@ div {
     height: 50%;
     margin: auto;
     /*border: 1px solid #73AD21;*/
-    font-size: 4vw;
+    font-size: 3.5vw;
     /*font-size: 28px;*/
     word-wrap: break-word;
 }
@@ -162,3 +129,141 @@ img {
   /*display:inline-block;*/
   margin: 10px;
 }
+
+
+/*  SECTIONS  ============================================================================= */
+
+.section {
+    clear: both;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*  GROUPING  ============================================================================= */
+
+
+.group:before,
+.group:after {
+    content:"";
+    display:table;
+}
+.group:after {
+    clear:both;
+}
+.group {
+    zoom:1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+/*  GRID COLUMN SETUP   ==================================================================== */
+
+.col {
+    display: block;
+    float:left;
+    margin: 1% 0 1% 1.6%;
+}
+/*  GRID OF FIVE   ============================================================================= */
+
+    
+.span_5_of_5 {
+    width: 100%;
+}
+
+.span_4_of_5 {
+    width: 79.68%; 
+}
+
+.span_3_of_5 {
+    width: 59.36%; 
+}
+
+.span_2_of_5 {
+    width: 39.04%;
+}
+
+.span_1_of_5 {
+    width: 18.72%;
+}
+
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+    .span_5_of_5 {
+        width: 100%; 
+    }
+    .span_4_of_5 {
+        width: 100%; 
+    }
+    .span_3_of_5 {
+        width: 100%; 
+    }
+    .span_2_of_5 {
+        width: 100%; 
+    }
+    .span_1_of_5 {
+        width: 100%; 
+    }
+}
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+    .span_3_of_3 {
+        width: 100%; 
+    }
+    .span_2_of_3 {
+        width: 100%; 
+    }
+    .span_1_of_3 {
+        width: 100%;
+    }
+}
+
+.col:first-child { margin-left: 0; } /* all browsers except IE6 and lower */
+
+
+/*  REMOVE MARGINS AS ALL GO FULL WIDTH AT 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+    .col { 
+        margin: 1% 0 1% 0%;
+    }
+}
+
+
+
+
+
+
+
+/*.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+fieldset {
+    boarder: none;
+}
+.content {
+    /*margin: auto;*/
+}
+
+*/
