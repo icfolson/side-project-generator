@@ -8,6 +8,10 @@ body {
     /*max-width: 1280px;*/
 }
 
+head {
+    font-family: 'Ubuntu Mono', monospace;
+}
+
 input[type=checkbox] {
     display: block;
     width: 9vw;
@@ -62,6 +66,7 @@ div {
     /*//margin: 25px;*/
     /*text-transform: capitalize;*/
     text-align: center;
+    font-family: 'Ubuntu Mono', monospace;
 }
 
 .floating-box {
