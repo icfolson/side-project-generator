@@ -10,25 +10,15 @@ var ideaList = [
 var output = [0, 0];
 var isLeftLocked = document.getElementById("isLeftLocked");
 var isRightLocked = document.getElementById("isRightLocked");
-var lockedOut = false;
+//var leftSelect = document.getElementById("leftSelect");
 var alertCounter = 0;
-var popList = [ 'transparent.gif',
-	'wigflip-ds-lock.gif', 'wigflip-ds-2.gif', 'wigflip-ds-3.gif', 'wigflip-ds-4.gif', 'wigflip-ds-5.gif',
-	'wigflip-ds-6.gif',	'wigflip-ds-7.gif', 'wigflip-ds-8.gif', 'wigflip-ds-9.gif', 'wigflip-ds-10.gif',
-	'wigflip-ds-11.gif', 'wigflip-ds-12.gif'
-]
-//var image = document.getElementsByClassName("popImg");
-
 
 function newOutput(){
 	if(isLeftLocked.checked === true && isRightLocked.checked === true){
-		lockedOut = true;
-		//changePop(1);
-		//alertCounter = alertCounter - 1;
+		alert("homie, you all locked out..");
 		return null;
 	}
 	else if(isLeftLocked.checked === true || isRightLocked.checked === true){
-		lockedOut = false;
 		if(isLeftLocked.checked === true){
 			output[1] = getRandom();
 			while(output[1] === output[0]){
@@ -36,7 +26,6 @@ function newOutput(){
 			}
 		}
 		if(isRightLocked.checked === true){
-			lockedOut = false;
 			output[0] = getRandom();
 			while(output[1] === output[0]){
 				output[0] = getRandom();
@@ -44,7 +33,6 @@ function newOutput(){
 		}
 	}
 	else{
-		lockedOut = false;
 		output[0] = getRandom();
 		output[1] = getRandom();
 		while(output[1] === output[0]){
@@ -56,17 +44,11 @@ function newOutput(){
 function myFunction(){
 		//alert("there are "+ideaList.length+" list items");
 		newOutput();
-		//changePop(0);
-		if(lockedOut){
-			//changePop(1);
-			return null;
-		}
-		lockedOut = false;
 		var leftDisplay = ideaList[output[0]];
 		var rightDisplay = ideaList[output[1]];
 		//for wiki page
-			// document.getElementById("leftOutput").href = "https://www.wikipedia.org/wiki/"+leftDisplay;
-			// document.getElementById("rightOutput").href = "https://www.wikipedia.org/wiki/"+rightDisplay;
+		// document.getElementById("leftOutput").href = "https://www.wikipedia.org/wiki/"+leftDisplay;
+		// document.getElementById("rightOutput").href = "https://www.wikipedia.org/wiki/"+rightDisplay;
 		//for google image page
 		document.getElementById("leftOutput").href = "http://images.google.com/search?tbm=isch&q="+textEdit(leftDisplay);
 		document.getElementById("rightOutput").href = "http://images.google.com/search?tbm=isch&q="+textEdit(rightDisplay);
@@ -74,29 +56,30 @@ function myFunction(){
 		document.getElementById("leftOutput").innerHTML = leftDisplay;
 		document.getElementById("rightOutput").innerHTML = rightDisplay;
 		alertCounter = alertCounter + 1;
-
-		/*if(alertCounter === 5){changePop(2);		}
-		if(alertCounter === 8){changePop(3);		}
-		if(alertCounter === 12){changePop(4);		}
-		if(alertCounter === 15){changePop(5);		}
-		if(alertCounter === 20){changePop(6);		}
-		if(alertCounter === 25){changePop(7);		}
-		if(alertCounter === 30){changePop(8);		}
-		if(alertCounter === 40){changePop(9);		}
-		if(alertCounter === 41){changePop(10);		}
-		if(alertCounter === 42){changePop(11);		}
-		if(alertCounter%45 === 0){changePop(12);		}
+		/*
+		if(alertCounter === 5){
+			alert("you know those are links");
+		}
+		if(alertCounter === 8){
+			alert("like you can click on those");
+		}
+		if(alertCounter === 12){
+			alert("any good ideas yet?");
+		}
 		*/
 }
 
 function getRandom(){
+	//var x = Math.floor(Math.random() * ideaList.length);
+	//x = Math.floor(Math.random() * ideaList.length);
+	// alert("success");
 	return Math.floor(Math.random() * ideaList.length);
+}
+function sendGoogle(idea){
+
 }
 function textEdit(stuff){
 	//http://images.google.com/search?tbm=isch&q=
 	return stuff.replace(/ /g, "_");
-}
-function changePop(number){
-	document.getElementById("popImg").src="images/pop/"+popList[number];
 }
 

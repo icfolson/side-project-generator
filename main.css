@@ -20,7 +20,7 @@ input[type=checkbox] {
     width: 9vw;
     height: 9vh;
     -webkit-appearance: none;
-    outline: 0;
+    outline: none;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
