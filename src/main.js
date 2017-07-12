@@ -23,7 +23,7 @@ var popList = [ 'transparent.gif',
 function newOutput(){
 	if(isLeftLocked.checked === true && isRightLocked.checked === true){
 		lockedOut = true;
-		changePop(1);
+		//changePop(1);
 		//alertCounter = alertCounter - 1;
 		return null;
 	}
@@ -56,9 +56,9 @@ function newOutput(){
 function myFunction(){
 		//alert("there are "+ideaList.length+" list items");
 		newOutput();
-		changePop(0);
+		//changePop(0);
 		if(lockedOut){
-			changePop(1);
+			//changePop(1);
 			return null;
 		}
 		lockedOut = false;
@@ -75,7 +75,7 @@ function myFunction(){
 		document.getElementById("rightOutput").innerHTML = rightDisplay;
 		alertCounter = alertCounter + 1;
 
-		if(alertCounter === 5){changePop(2);		}
+		/*if(alertCounter === 5){changePop(2);		}
 		if(alertCounter === 8){changePop(3);		}
 		if(alertCounter === 12){changePop(4);		}
 		if(alertCounter === 15){changePop(5);		}
@@ -86,6 +86,7 @@ function myFunction(){
 		if(alertCounter === 41){changePop(10);		}
 		if(alertCounter === 42){changePop(11);		}
 		if(alertCounter%45 === 0){changePop(12);		}
+		*/
 }
 
 function getRandom(){
