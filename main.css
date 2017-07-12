@@ -123,12 +123,14 @@ img {
 }
 
 .container {
-  width: 70%;
-  
-  margin: 10px auto;
   position: relative;
-  text-align:center;
+  /*width: 70%;*/
+  /*margin: 10px auto;*/
+  /*text-align:center;*/
 }
+
+.imgA1 { position:relative; top: -20px; left: 0px; z-index: 1; } 
+.imgB1 { position:relative; top: 10px; left: 50px; z-index: 3; }
 
 .block {
   
