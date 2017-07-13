@@ -1,14 +1,14 @@
-/*developed by Alex Nelson
+/*Side Project Generator - Nelson
+ *developed by Alex Nelson
  *summer 2017
 */
 
 var ideaList = [
-	'is 26 years old', 'is a taurus', 'enjoys coding', 'made this website', 'likes long walks on the beach', 'interns at ICF Olson', 'can\'t teach you how to duggie', 'eats at Chipotle', 'finds new craft breweries', 'supports local', 'speaks french'
+	'is 26 years old', 'is a taurus', 'enjoys coding', 'made this website', 'likes long walks on the beach', 'interns at ICF Olson', 'can\'t teach you how to dougie', 'eats at Chipotle', 'finds new craft breweries', 'supports local', 'speaks french', 'is an Eagle Scout', 'dislikes use of the word hate', 'like Hawaiian pizza', 'rolls a mean burrito'
 ];
 var output = [0, 0];
 var isLeftLocked = document.getElementById("isLeftLocked");
 var isRightLocked = document.getElementById("isRightLocked");
-//var leftSelect = document.getElementById("leftSelect");
 var alertCounter = 0;
 
 function newOutput(){
@@ -44,13 +44,6 @@ function myFunction(){
 		newOutput();
 		var leftDisplay = ideaList[output[0]];
 		var rightDisplay = ideaList[output[1]];
-		//for wiki page
-		// document.getElementById("leftOutput").href = "https://www.wikipedia.org/wiki/"+leftDisplay;
-		// document.getElementById("rightOutput").href = "https://www.wikipedia.org/wiki/"+rightDisplay;
-		//for google image page
-		//document.getElementById("leftOutput").href = "http://images.google.com/search?tbm=isch&q="+textEdit(leftDisplay);
-		//document.getElementById("rightOutput").href = "http://images.google.com/search?tbm=isch&q="+textEdit(rightDisplay);
-
 		document.getElementById("leftOutput").innerHTML = leftDisplay;
 		document.getElementById("rightOutput").innerHTML = rightDisplay;
 		alertCounter = alertCounter + 1;
@@ -68,15 +61,5 @@ function myFunction(){
 }
 
 function getRandom(){
-	//var x = Math.floor(Math.random() * ideaList.length);
-	//x = Math.floor(Math.random() * ideaList.length);
-	// alert("success");
 	return Math.floor(Math.random() * ideaList.length);
-}
-function sendGoogle(idea){
-
-}
-function textEdit(stuff){
-	//http://images.google.com/search?tbm=isch&q=
-	return stuff.replace(/ /g, "_");
 }

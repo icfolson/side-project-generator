@@ -1,5 +1,6 @@
-/*developed by Alex Nelson
+/*Side Project Generator
  *summer 2017
+ *developed by Alex Nelson
  *col styling by boostrap
 */
 
@@ -10,10 +11,7 @@ body {
     margin: auto;
     /*max-width: 1280px;*/
 }
-
-head {
-    font-family: 'Ubuntu Mono', monospace;
-}
+head { font-family: 'Ubuntu Mono', monospace; }
 
 input[type=checkbox] {
     display: block;
@@ -25,23 +23,13 @@ input[type=checkbox] {
     background-position: center center;
     background-size: contain;
 }
-
 input[type=checkbox]:not(:checked) {
     background-image: url(images/unlock.png);
     display: inline-block;
 }
-
 input[type=checkbox]:checked {
     background-image: url(images/lock.png);
     display: inline-block;
-}
-
-p {
-    /*display: block;*/
-    /*margin-top: 1em;*/
-    /*margin-bottom: 1em;*/
-    /*margin-left: 0;*/
-    /*margin-right: 0;*/
 }
 
 button {
@@ -49,17 +37,11 @@ button {
     font-size: 18px;
     border: transparent;
     background: transparent;
-
 }
 
-h1 {
-    text-align: center;
-}
+h1 { text-align: center; }
 
-a {
-    /*color: hotpink;*/
-    color: black;
-}
+a { color: black; }
 
 div {
     /*//background-color: #FFFFFF;*/
@@ -93,23 +75,10 @@ img {
     width: 100%;
     height: auto;
 }
-.link span{
-    color:black;
-    font-size:15px;
-}
-
-.link:hover span{
-    font-style:italic;
-}
-
-.blink span{
-    color:black;
-    /*font-size:15px;*/
-}
-
-.blink:hover span{
-    font-style:italic;
-}
+.link span{ color:black; font-size:15px; }
+.link:hover span{ font-style:italic; }
+.blink span{ color:black; /*font-size:15px;*/ }
+.blink:hover span{ font-style:italic; }
 
 .footer {
     /*float: center;*/
@@ -122,27 +91,28 @@ img {
     /*padding: 1rem;*/
 }
 
-.container {
-  position: relative;
-  /*width: 70%;*/
-  /*margin: 10px auto;*/
-  /*text-align:center;*/
+.imgA1 {
+    position:relative;
+    top: -20px;
+    left: 0px;
+    z-index: 1; 
+} 
+.imgB1 {
+    position:relative;
+    top: 10px;
+    left: 50px;
+    z-index: 3;
 }
 
-.imgA1 { position:relative; top: -20px; left: 0px; z-index: 1; } 
-.imgB1 { position:relative; top: 10px; left: 50px; z-index: 3; }
-
 .block {
-  
-  height: 100px;
-  width: 100px;
-  /*display:inline-block;*/
-  margin: 10px;
+    height: 100px;
+    width: 100px;
+    /*display:inline-block;*/
+    margin: 10px;
 }
 
 /*  START Bootstrap   */
 /*  SECTIONS  ============================================================================= */
-
 .section {
     clear: both;
     margin: 0px;
@@ -150,8 +120,6 @@ img {
 }
 
 /*  GROUPING  ============================================================================= */
-
-
 .group:before,
 .group:after {
     content:"";
@@ -165,78 +133,39 @@ img {
 }
 
 /*  GRID COLUMN SETUP   ==================================================================== */
-
 .col {
     display: block;
     float:left;
     margin: 1% 0 1% 1.6%;
 }
+
 /*  GRID OF FIVE   ============================================================================= */
-
-    
-.span_5_of_5 {
-    width: 100%;
-}
-
-.span_4_of_5 {
-    width: 79.68%; 
-}
-
-.span_3_of_5 {
-    width: 59.36%; 
-}
-
-.span_2_of_5 {
-    width: 39.04%;
-}
-
-.span_1_of_5 {
-    width: 18.72%;
-}
-
+.span_5_of_5 { width: 100%; }
+.span_4_of_5 { width: 79.68%; }
+.span_3_of_5 { width: 59.36%; }
+.span_2_of_5 { width: 39.04%; }
+.span_1_of_5 { width: 18.72%; }
 
 /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
-
 @media only screen and (max-width: 480px) {
-    .span_5_of_5 {
-        width: 100%; 
-    }
-    .span_4_of_5 {
-        width: 100%; 
-    }
-    .span_3_of_5 {
-        width: 100%; 
-    }
-    .span_2_of_5 {
-        width: 100%; 
-    }
-    .span_1_of_5 {
-        width: 100%; 
-    }
+    .span_5_of_5 { width: 100%; }
+    .span_4_of_5 { width: 100%; }
+    .span_3_of_5 { width: 100%; }
+    .span_2_of_5 { width: 100%; }
+    .span_1_of_5 { width: 100%; }
 }
 
 /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
-
 @media only screen and (max-width: 480px) {
-    .span_3_of_3 {
-        width: 100%; 
-    }
-    .span_2_of_3 {
-        width: 100%; 
-    }
-    .span_1_of_3 {
-        width: 100%;
-    }
+    .span_3_of_3 { width: 100%; }
+    .span_2_of_3 { width: 100%; }
+    .span_1_of_3 { width: 100%; }
 }
 
 .col:first-child { margin-left: 0; } /* all browsers except IE6 and lower */
 
-
 /*  REMOVE MARGINS AS ALL GO FULL WIDTH AT 480 PIXELS */
-
 @media only screen and (max-width: 480px) {
-    .col { 
-        margin: 1% 0 1% 0%;
-    }
+    .col { margin: 1% 0 1% 0%; }
 }
 /*  END Bootstrap   */
