@@ -27,11 +27,13 @@ input[type=checkbox]:not(:checked) {
     background-image: url(images/unlock.png);
     display: inline-block;
     border: none;
+    background: transparent;
 }
 input[type=checkbox]:checked {
     background-image: url(images/lock.png);
     display: inline-block;
     border: none;
+    background: transparent;
 }
 
 button {
