@@ -22,6 +22,7 @@ input[type=checkbox] {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
+    background: transparent;
 }
 input[type=checkbox]:not(:checked) {
     background-image: url(images/unlock.png);
