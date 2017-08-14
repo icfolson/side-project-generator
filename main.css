@@ -26,16 +26,18 @@ input[type=checkbox] {
 input[type=checkbox]:not(:checked) {
     background-image: url(images/unlock.png);
     display: inline-block;
+    border: none;
 }
 input[type=checkbox]:checked {
     background-image: url(images/lock.png);
     display: inline-block;
+    border: none;
 }
 
 button {
     font-family: 'Ubuntu Mono', monospace;
     font-size: 18px;
-    border: transparent;
+    border: none;
     background: transparent;
 }
 
