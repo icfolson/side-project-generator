@@ -25,12 +25,16 @@ input[type=checkbox] {
 }
 input[type=checkbox]:not(:checked) {
     background-image: url(images/unlock.png);
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
     display: inline-block;
     border: none;
     /*background: transparent;*/
 }
 input[type=checkbox]:checked {
     background-image: url(images/lock.png);
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
     display: inline-block;
     border: none;
     /*background: transparent;*/
