@@ -37,7 +37,7 @@ input[type=checkbox]:checked {
     -webkit-tap-highlight-color: rgba(0,0,0,0);
     display: inline-block;
     border: none;
-    /*background: transparent;*/
+    background-color: none;
 }
 
 button {
